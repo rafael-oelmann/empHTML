@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css" />
+  </head>
+  <style>
+    #contact {
+      display: none;
+    }
+  </style>
+  <body>
+    <div>
+      <img
+        src="./images/Emperor dog black on nothing with border 2.jpg"
+        width="300"
+      />
+    </div>
+
+    <div class="window" style="width: 300px">
+      <div class="title-bar">
+        <div class="title-bar-text">emperor recordings</div>
+        <div class="title-bar-controls"></div>
+      </div>
+
+      <section class="field-row" style="justify-content: center">
+        <button>Mixes</button>
+        <button>Releases</button>
+        <button onclick="contact()">Contact</button>
+      </section>
+    </div>
+
+    <div class="window" id="contact" style="width: 300px">
+      <div>
+        <p>contact worked</p>
+      </div>
+    </div>
+
+    <script>
+      function contact() {
+        var x = document.getElementById("contact");
+        console.log(x);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          console.log(x);
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
